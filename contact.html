@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact Pee Fridges & Appliances Repairs for fast appliance repair service in Gauteng. Call, WhatsApp, or email us today.">
+    <title>Contact Us - Pee Fridges & Appliances Repairs</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="/images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/images/favicon/site.webmanifest" />
+    <style>
+        /* HERO */
+     .about-hero {
+            position: relative;
+            background: url('https://i.pinimg.com/736x/7f/7b/ac/7f7bace7fa8df8c8143c6d8edd873288.jpg') no-repeat center center;
+            background-size: cover;
+            height: 450px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .about-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            /* Dark overlay */
+        }
+
+        .about-hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .about-hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .about-hero p.lead {
+            font-size: 1.3rem;
+            margin-top: 10px;
+        }
+
+        /* CONTACT INFO */
+        .contact-info .info-box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        }
+
+        .contact-info .info-box i {
+            font-size: 26px;
+            color: #dc3545;
+            margin-bottom: 10px;
+        }
+
+        .contact-info h5 {
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .contact-info a {
+            font-weight: 600;
+            color: #000;
+            text-decoration: none;
+        }
+
+        /* MAP */
+        .map-section iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+
+        
+        /* ===== Responsive ===== */
+        @media (max-width: 992px) {
+            .about-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .about-story h2 {
+                font-size: 1.75rem;
+            }
+
+            .feature-box {
+                padding: 25px 15px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .about-hero h1 {
+                font-size: 2rem;
+            }
+
+            .about-hero p.lead {
+                font-size: 1.1rem;
+            }
+
+            .feature-box h5 {
+                font-size: 1.05rem;
+            }
+
+            .feature-box p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loadingScreen">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/27731556489?text=Hi,%20I%20need%20help%20with%20an%20appliance%20repair"
+        class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Pee <span>Fridges & Appliances Repairs</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-cta" href="tel:0731556489">
+                            <i class="fas fa-phone-alt me-2"></i>Call Now
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTACT HERO -->
+    <section class="page-hero about-hero">
+        <div class="hero-overlay"></div>
+        <div class="container text-center text-white">
+            <h1 class="fw-bold">Contact Us</h1>
+            <p class="lead">Get in touch for fast, reliable appliance repair service. Same-day appointments available.</p>
+             <a href="contact.html" class="btn btn-primary btn-lg mt-3">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="py-5" id="contact">
+        <div class="container">
+            <div class="row g-5">
+
+                <!-- CONTACT FORM -->
+                <div class="col-lg-7">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <h3 class="mb-4">Send Us a Message</h3>
+
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label">Full Name *</label>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label">Phone Number *</label>
+                                        <input type="tel" class="form-control" required>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label">Email Address</label>
+                                    <input type="email" class="form-control">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label">Service Needed</label>
+                                    <select class="form-select">
+                                        <option selected>Select a service</option>
+                                        <option>Fridge Repairs</option>
+                                        <option>Freezer Repairs</option>
+                                        <option>Cold & Freezer Rooms</option>
+                                        <option>Chillers</option>
+                                        <option>Air Conditioning</option>
+                                        <option>Washing Machines</option>
+                                        <option>Stoves & Ovens</option>
+                                        <option>Electrical Repairs</option>
+                                        <option>Plumbing Services</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label">Your Area</label>
+                                    <input type="text" class="form-control"
+                                        placeholder="Johannesburg, Pretoria, Centurion">
+                                </div>
+
+                                <div class="mb-4">
+                                    <label class="form-label">Message *</label>
+                                    <textarea class="form-control" rows="5" required></textarea>
+                                </div>
+
+                                <button class="btn btn-danger btn-lg w-100">
+                                    <i class="fas fa-paper-plane me-2"></i> Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONTACT INFO -->
+                <div class="col-lg-5">
+                    <div class="contact-info">
+
+                        <div class="info-box">
+                            <i class="fas fa-phone-alt"></i>
+                            <h5>Call Us</h5>
+                            <a href="tel:0731556489">073 155 6489</a>
+                            <p>Fast response & same-day service available</p>
+                        </div>
+
+                        <div class="info-box">
+                            <i class="fab fa-whatsapp text-success"></i>
+                            <h5>WhatsApp</h5>
+                            <a href="https://wa.me/27731556489" target="_blank">
+                                Chat with us instantly
+                            </a>
+                            <p>Send photos for quick diagnosis</p>
+                        </div>
+
+                        <div class="info-box">
+                            <i class="fas fa-envelope"></i>
+                            <h5>Email</h5>
+                            <a href="mailto:fridgesrepair2012@gmail.com">
+                                fridgesrepair2012@gmail.com
+                            </a>
+                        </div>
+
+                        <div class="info-box">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h5>Service Areas</h5>
+                            <p>
+                                Johannesburg • Pretoria • Centurion<br>
+                                Midrand • Sandton • Randburg<br>
+                                All Gauteng Suburbs
+                            </p>
+                        </div>
+
+                        <div class="info-box">
+                            <i class="fas fa-clock"></i>
+                            <h5>Working Hours</h5>
+                            <p>
+                                Monday – Sunday<br>
+                                9:00 AM – 6:00 PM<br>
+                                <strong>Emergency service available</strong>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- MAP SECTION -->
+    <section class="map-section">
+        <iframe src="https://www.google.com/maps?q=Centurion,Pretoria&output=embed" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+
+    <!-- FAQ Section -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <h2 class="mb-4">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                           Who are you and what do you specialize in?
+                        </button>
+                    </h3>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            We are a professional appliance repair service specializing in refrigeration, air conditioning, and household appliance repairs across all major suburbs in Johannesburg and Pretoria.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            How quickly can you respond to a repair request?
+                        </button>
+                    </h3>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            We offer same-day service for most repairs. For emergency situations, we can often be there
+                            within 2-4 hours. Response times depend on your location in Gauteng and current service
+                            volume.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq3">
+                            Do you fix appliances on-site or take them away?
+                        </button>
+                    </h3>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Most repairs are done on-site. If an appliance needs specialized work, we will clearly explain the next steps.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq4">
+                            What areas in Gauteng do you service?
+                        </button>
+                    </h3>
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            We service the entire Gauteng province including Johannesburg, Pretoria, Centurion, Midrand,
+                            Sandton, Randburg, Roodepoort, Fourways, Kempton Park, Benoni, Germiston, Alberton, and all
+                            surrounding suburbs.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq5">
+                            Will you inspect my appliance before quoting?
+                        </button>
+                    </h3>
+                    <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                           Yes, we assess the problem first and explain the issue before proceeding with any repair.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq6">
+                            What happens if my appliance cannot be repaired?
+                        </button>
+                    </h3>
+                    <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                          We will give you honest advice and let you know if a repair is not cost-effective, so you can make an informed decision.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq7">
+                           Are your technicians qualified and experienced?
+                        </button>
+                    </h3>
+                    <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                           Yes, our technicians are trained and have hands-on experience with a wide range of appliance brands and systems.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faq8">
+                           Why should I choose your company over others?
+                        </button>
+                    </h3>
+                    <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                           We offer honest assessments, experienced technicians, fast response times, and reliable workmanship you can trust.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row gy-4">
+
+                <!-- Brand & Contact -->
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title">Pee Fridges & Appliances Repairs</h5>
+                    <p class="footer-text">
+                        Professional refrigeration, appliance, air conditioning, electrical, and plumbing
+                        repair services across Gauteng. Trusted since 2012.
+                    </p>
+
+                    <div class="footer-actions mt-3 mb-5">
+                        <a href="https://wa.me/27731556489" class="btn btn-success btn-sm me-2" target="_blank">
+                            <i class="fab fa-whatsapp me-1"></i> WhatsApp
+                        </a>
+                        <a href="tel:0731556489" class="btn btn-outline-light btn-sm">
+                            <i class="fas fa-phone me-1"></i> Call Now
+                        </a>
+                    </div>
+
+                    <!-- Contact -->
+                    <h5 class="footer-title">Contact Info</h5>
+                    <ul class="contact-info-footer">
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>073 155 6489</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>fridgesrepair2012@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Centurion, Pretoria<br>Serving all Gauteng areas</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- All Services -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Our Services</h5>
+                    <ul class="footer-links">
+                        <li>Fridge Repairs</li>
+                        <li>Freezer Repairs</li>
+                        <li>Cold & Freezer Rooms</li>
+                        <li>Chillers</li>
+                        <li>Under-Counter Units</li>
+                        <li>Bottle Coolers</li>
+                        <li>Ice Makers</li>
+                        <li>Air Conditioning Installation & Repair</li>
+                        <li>Washing Machines</li>
+                        <li>Tumble Dryers</li>
+                        <li>Stoves & Ovens</li>
+                        <li>Electrical Fault Repairs</li>
+                        <li>Plumbing Services</li>
+                    </ul>
+                </div>
+
+                <!-- Areas We Cover -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Areas We Cover</h5>
+                    <ul class="footer-links">
+                        <li>Johannesburg</li>
+                        <li>Pretoria</li>
+                        <li>Centurion</li>
+                        <li>Midrand</li>
+                        <li>Sandton</li>
+                        <li>Randburg</li>
+                        <li>Roodepoort</li>
+                        <li>Fourways</li>
+                        <li>Kempton Park</li>
+                        <li>Benoni</li>
+                        <li>Germiston</li>
+                        <li>Alberton</li>
+                        <li>All Gauteng Suburbs</li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <!-- Bottom bar -->
+            <div class="footer-bottom mt-4 pt-3 border-top border-secondary">
+                <p class="text-center mb-0">&copy; 2026 Pee Fridges & Appliances Repairs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

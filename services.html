@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Complete appliance repair services in Gauteng - Fridge repairs, AC installation, washing machines, electrical, plumbing, and more.">
+    <title>Our Services - Pee Fridges & Appliances Repairs</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="/images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/images/favicon/site.webmanifest" />
+    <style>
+        /* ===== Hero Section ===== */
+        .about-hero {
+            position: relative;
+            background: url('https://i.pinimg.com/736x/7f/7b/ac/7f7bace7fa8df8c8143c6d8edd873288.jpg') no-repeat center center;
+            background-size: cover;
+            height: 450px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .about-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            /* Dark overlay */
+        }
+
+        .about-hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .about-hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .about-hero p.lead {
+            font-size: 1.3rem;
+            margin-top: 10px;
+        }
+        
+        /* ===== Responsive ===== */
+        @media (max-width: 992px) {
+            .about-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .about-story h2 {
+                font-size: 1.75rem;
+            }
+
+            .feature-box {
+                padding: 25px 15px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .about-hero h1 {
+                font-size: 2rem;
+            }
+
+            .about-hero p.lead {
+                font-size: 1.1rem;
+            }
+
+            .feature-box h5 {
+                font-size: 1.05rem;
+            }
+
+            .feature-box p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loadingScreen">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/27731556489?text=Hi,%20I%20need%20help%20with%20an%20appliance%20repair"
+        class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Pee <span>Fridges & Appliances Repairs</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-cta" href="tel:0731556489">
+                            <i class="fas fa-phone-alt me-2"></i>Call Now
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Hero -->
+    <section class="service-hero about-hero">
+        <div class="container">
+            <h1>Our Professional Services</h1>
+            <p class="lead">Comprehensive repair solutions for homes and businesses across Gauteng</p>
+            <a href="contact.html" class="btn btn-primary btn-lg mt-3">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- All Services -->
+    <!-- Services Overview -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="section-title">Our Professional Services</h2>
+                <div class="row g-4">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-card image-card" style="background-image: url('images/fridge.jpg');">
+                            <div class="service-overlay">
+                                <div class="service-icon">
+                                    <i class="fas fa-snowflake"></i>
+                                </div>
+                                <h4>Fridge Repairs</h4>
+                                <p>Expert diagnosis and repair of all refrigerator brands and models.</p>
+                                <a href="fridge-repairs.html" class="text-warning fw-bold">
+                                    View Service →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- Freezer Repairs -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card image-card" style="background-image: url('images/freezer.jpg');">
+                    <div class="service-overlay">
+                        <div class="service-icon">
+                            <i class="fas fa-icicles"></i>
+                        </div>
+                        <h4>Freezer Repairs</h4>
+                        <p>Chest and upright freezer repairs including cooling and defrost faults.</p>
+                        <a href="freezer-repairs.html" class="text-warning fw-bold">View Service →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cold & Freezer Rooms -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card image-card" style="background-image: url('images/cold-room.jpg');">
+                    <div class="service-overlay">
+                        <div class="service-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h4>Cold & Freezer Rooms</h4>
+                        <p>Installation, servicing and repairs for commercial cold & freezer rooms.</p>
+                        <a href="cold-rooms.html" class="text-warning fw-bold">View Service →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chillers -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card image-card" style="background-image: url('images/chiller.jpg');">
+                    <div class="service-overlay">
+                        <div class="service-icon">
+                            <i class="fas fa-temperature-low"></i>
+                        </div>
+                        <h4>Chillers</h4>
+                        <p>Professional repair and maintenance of water and industrial chillers.</p>
+                        <a href="chillers.html" class="text-warning fw-bold">View Service →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Under-Counter Units -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card image-card" style="background-image: url('images/undercounter.jpg');">
+                    <div class="service-overlay">
+                        <div class="service-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h4>Under-Counter Units</h4>
+                        <p>Repair and installation for bars, kitchens and restaurants.</p>
+                        <a href="under-counter.html" class="text-warning fw-bold">View Service →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottle Coolers -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card image-card" style="background-image: url('images/bottle-cooler.jpg');">
+                    <div class="service-overlay">
+                        <div class="service-icon">
+                            <i class="fas fa-wine-bottle"></i>
+                        </div>
+                        <h4>Bottle Coolers</h4>
+                        <p>Commercial bottle cooler repairs to keep beverages perfectly chilled.</p>
+                        <a href="bottle-coolers.html" class="text-warning fw-bold">View Service →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ice Makers -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card image-card" style="background-image: url('images/ice-maker.jpg');">
+                    <div class="service-overlay">
+                        <div class="service-icon">
+                            <i class="fas fa-ice-cream"></i>
+                        </div>
+                        <h4>Ice Makers</h4>
+                        <p>Fast and reliable repairs for commercial and domestic ice machines.</p>
+                        <a href="ice-makers.html" class="text-warning fw-bold">View Service →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Air Conditioning -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card image-card" style="background-image: url('images/ac.jpg');">
+                    <div class="service-overlay">
+                        <div class="service-icon">
+                            <i class="fas fa-wind"></i>
+                        </div>
+                        <h4>Air Conditioning</h4>
+                        <p>Installation, servicing and repair of all AC systems.</p>
+                        <a href="air-conditioning.html" class="text-warning fw-bold">View Service →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Washing Machines -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card image-card" style="background-image: url('images/washing_machine.jpg');">
+                    <div class="service-overlay">
+                        <div class="service-icon">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <h4>Washing Machines</h4>
+                        <p>Front-load and top-load washing machine repairs.</p>
+                        <a href="washing-machines.html" class="text-warning fw-bold">View Service →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tumble Dryers -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card image-card" style="background-image: url('images/tumble_dryer.jpg');">
+                    <div class="service-overlay">
+                        <div class="service-icon">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <h4>Tumble Dryers</h4>
+                        <p>Repair of heating, drum, and electrical dryer issues.</p>
+                        <a href="tumble-dryers.html" class="text-warning fw-bold">View Service →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stoves & Ovens -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card image-card" style="background-image: url('images/stove.jpg');">
+                    <div class="service-overlay">
+                        <div class="service-icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <h4>Stoves & Ovens</h4>
+                        <p>Gas and electric stove & oven repairs.</p>
+                        <a href="stoves-ovens.html" class="text-warning fw-bold">View Service →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Electrical Repairs -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card image-card" style="background-image: url('images/electrical.jpg');">
+                    <div class="service-overlay">
+                        <div class="service-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h4>Electrical Fault Repairs</h4>
+                        <p>Safe fault finding and electrical repairs.</p>
+                        <a href="electrical-repairs.html" class="text-warning fw-bold">View Service →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plumbing -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card image-card" style="background-image: url('images/plumbing.jpg');">
+                    <div class="service-overlay">
+                        <div class="service-icon">
+                            <i class="fas fa-faucet"></i>
+                        </div>
+                        <h4>Plumbing Services</h4>
+                        <p>Leaks, blockages, taps and general plumbing services.</p>
+                        <a href="plumbing-services.html" class="text-warning fw-bold">View Service →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="cta-section">
+    <div class="container">
+        <h2>Can't Find Your Specific Issue?</h2>
+        <p class="mb-4">Contact us directly - we likely can help with your appliance or repair need</p>
+        <div>
+            <a href="https://wa.me/27731556489?text=Hi,%20I%20need%20help%20with%20a%20repair%20not%20listed%20on%20your%20website"
+                class="btn btn-light me-3" target="_blank">
+                <i class="fab fa-whatsapp me-2"></i>WhatsApp Us
+            </a>
+            <a href="tel:0731556489" class="btn btn-outline-light">
+                <i class="fas fa-phone-alt me-2"></i>Call 073 155 6489
+            </a>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row gy-4">
+
+                <!-- Brand & Contact -->
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title">Pee Fridges & Appliances Repairs</h5>
+                    <p class="footer-text">
+                        Professional refrigeration, appliance, air conditioning, electrical, and plumbing
+                        repair services across Gauteng. Trusted since 2012.
+                    </p>
+
+                    <div class="footer-actions mt-3 mb-5">
+                        <a href="https://wa.me/27731556489" class="btn btn-success btn-sm me-2" target="_blank">
+                            <i class="fab fa-whatsapp me-1"></i> WhatsApp
+                        </a>
+                        <a href="tel:0731556489" class="btn btn-outline-light btn-sm">
+                            <i class="fas fa-phone me-1"></i> Call Now
+                        </a>
+                    </div>
+
+                    <!-- Contact -->
+                    <h5 class="footer-title">Contact Info</h5>
+                    <ul class="contact-info-footer">
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>073 155 6489</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>fridgesrepair2012@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Centurion, Pretoria<br>Serving all Gauteng areas</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- All Services -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Our Services</h5>
+                    <ul class="footer-links">
+                        <li>Fridge Repairs</li>
+                        <li>Freezer Repairs</li>
+                        <li>Cold & Freezer Rooms</li>
+                        <li>Chillers</li>
+                        <li>Under-Counter Units</li>
+                        <li>Bottle Coolers</li>
+                        <li>Ice Makers</li>
+                        <li>Air Conditioning Installation & Repair</li>
+                        <li>Washing Machines</li>
+                        <li>Tumble Dryers</li>
+                        <li>Stoves & Ovens</li>
+                        <li>Electrical Fault Repairs</li>
+                        <li>Plumbing Services</li>
+                    </ul>
+                </div>
+
+                <!-- Areas We Cover -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-title">Areas We Cover</h5>
+                    <ul class="footer-links">
+                        <li>Johannesburg</li>
+                        <li>Pretoria</li>
+                        <li>Centurion</li>
+                        <li>Midrand</li>
+                        <li>Sandton</li>
+                        <li>Randburg</li>
+                        <li>Roodepoort</li>
+                        <li>Fourways</li>
+                        <li>Kempton Park</li>
+                        <li>Benoni</li>
+                        <li>Germiston</li>
+                        <li>Alberton</li>
+                        <li>All Gauteng Suburbs</li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <!-- Bottom bar -->
+            <div class="footer-bottom mt-4 pt-3 border-top border-secondary">
+                <p class="text-center mb-0">&copy; 2026 Pee Fridges & Appliances Repairs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
