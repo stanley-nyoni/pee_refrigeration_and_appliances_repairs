@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Fast and reliable mobile appliance repairs for fridges, air conditioning, washing machines, ovens, and more. Professional on-site service you can trust in Johannesburg, Pretoria, Centurion.">
-    <title>Pee Fridges & Appliances Repairs - Mobile Refrigeration, Air Conditioning & Appliance Repairs in Centurion, Pretoria, Johannesburg and across Gauteng. </title>
+    <title>Pee Fridges & Appliances Repairs - Mobile Refrigeration, Air Conditioning & Appliance Repairs in Centurion,
+        Pretoria, Johannesburg and across Gauteng. </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link
@@ -17,13 +19,27 @@
     <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="/images/favicon/site.webmanifest" />
+    <link rel="canonical" href="https://peefridgesrepairs.co.za/" />
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BSBM42JXWC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-BSBM42JXWC');
+    </script>
 
 </head>
 
 <body>
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/27731556489?text=Hi,%20I%20need%20help%20with%20an%20appliance%20repair"
-        class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+    <a href="https://wa.me/27731556489?text=Hi,%20I%20need%20help%20with%20an%20appliance%20repair" onclick="gtag('event', 'whatsapp_click', {
+       'event_category': 'engagement',
+       'event_label': 'WhatsApp Floating Button'
+    });" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
     <nav class="navbar navbar-expand-lg">
@@ -63,10 +79,16 @@
                     service available.</p>
                 <div class="mt-4">
                     <a href="https://wa.me/27731556489?text=Hi,%20I%20need%20help%20with%20an%20appliance%20repair"
-                        class="btn btn-primary me-3" target="_blank">
+                        onclick="gtag('event', 'whatsapp_click', {
+                        'event_category': 'engagement',
+                        'event_label': 'WhatsApp Hero Button'
+                    });" class="btn btn-primary me-3" target="_blank">
                         <i class="fab fa-whatsapp me-2"></i>WhatsApp Us Now
                     </a>
-                    <a href="tel:0731556489" class="btn btn-outline">
+                    <a href="tel:0731556489" onclick="gtag('event', 'call_click', {
+                        'event_category': 'engagement',
+                        'event_label': 'Call Button'
+                    });" class="btn btn-outline">
                         <i class="fas fa-phone-alt me-2"></i>Call 073 155 6489
                     </a>
                 </div>
@@ -163,198 +185,207 @@
             </div>
         </section>
 
-<!-- Why Choose Us -->
-<section class="py-5 why-choose-us">
-    <div class="container">
-        <h2 class="section-title">Why Choose Pee Fridges & Appliances Repairs</h2>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="feature-box">
-                    <div class="feature-icon">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <h4>Skilled & Professional Technicians</h4>
-                    <p>Our experienced technicians are trained to diagnose and repair a wide range of appliances.</p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="feature-box">
-                    <div class="feature-icon">
-                        <i class="fas fa-truck"></i>
-                    </div>
-                    <h4>Convenient Mobile Repairs</h4>
-                    <p>We provide professional on-site repairs, saving you the hassle of moving heavy appliances.</p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="feature-box">
-                    <div class="feature-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <h4>Wide Service Coverage</h4>
-                    <p>We offer mobile appliance repair services across Gauteng and surrounding areas.</p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="feature-box">
-                    <div class="feature-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <h4>Fast Response Times</h4>
-                    <p>We aim to respond quickly and offer same-day service where possible.</p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="feature-box">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h4>Trusted & Reliable Service</h4>
-                    <p>Known for dependable mobile repairs built on years of hands-on experience.</p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="feature-box">
-                    <div class="feature-icon">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <h4>Service You Can Rely On</h4>
-                    <p>Every repair is carried out with care and backed by a service guarantee.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<!-- Testimonials -->
-<section class="testimonial-section bg-light">
-    <div class="container">
-        <h2 class="section-title">What Our Customers Say</h2>
-
-        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-
-                <div class="carousel-item active">
-                    <div class="row justify-content-center">
-                        <div class="col-md-8">
-                            <div class="testimonial-card">
-                                <div class="testimonial-content">
-                                    "My fridge stopped cooling on a Friday evening and i called Pee Fridges, they
-                                    sent a technician within 2 hours.They offer professional service and reasonable
-                                    pricing. Highly recommend!"
-                                </div>
-                                <div class="testimonial-author">- Sarah M., Johannesburg</div>
+        <!-- Why Choose Us -->
+        <section class="py-5 why-choose-us">
+            <div class="container">
+                <h2 class="section-title">Why Choose Pee Fridges & Appliances Repairs</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <i class="fas fa-user-tie"></i>
                             </div>
+                            <h4>Skilled & Professional Technicians</h4>
+                            <p>Our experienced technicians are trained to diagnose and repair a wide range of
+                                appliances.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <h4>Convenient Mobile Repairs</h4>
+                            <p>We provide professional on-site repairs, saving you the hassle of moving heavy
+                                appliances.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h4>Wide Service Coverage</h4>
+                            <p>We offer mobile appliance repair services across Gauteng and surrounding areas.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h4>Fast Response Times</h4>
+                            <p>We aim to respond quickly and offer same-day service where possible.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4>Trusted & Reliable Service</h4>
+                            <p>Known for dependable mobile repairs built on years of hands-on experience.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h4>Service You Can Rely On</h4>
+                            <p>Every repair is carried out with care and backed by a service guarantee.</p>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="carousel-item">
-                    <div class="row justify-content-center">
-                        <div class="col-md-8">
-                            <div class="testimonial-card">
-                                <div class="testimonial-content">
-                                    "I had an AC installation done at my office. The team was punctual,
-                                    professional, and did a clean job. Will definitely use them again."
+
+        <!-- Testimonials -->
+        <section class="testimonial-section bg-light">
+            <div class="container">
+                <h2 class="section-title">What Our Customers Say</h2>
+
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8">
+                                    <div class="testimonial-card">
+                                        <div class="testimonial-content">
+                                            "My fridge stopped cooling on a Friday evening and i called Pee Fridges,
+                                            they
+                                            sent a technician within 2 hours.They offer professional service and
+                                            reasonable
+                                            pricing. Highly recommend!"
+                                        </div>
+                                        <div class="testimonial-author">- Sarah M., Johannesburg</div>
+                                    </div>
                                 </div>
-                                <div class="testimonial-author">- Shawn T., Sandton</div>
                             </div>
                         </div>
+
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8">
+                                    <div class="testimonial-card">
+                                        <div class="testimonial-content">
+                                            "I had an AC installation done at my office. The team was punctual,
+                                            professional, and did a clean job. Will definitely use them again."
+                                        </div>
+                                        <div class="testimonial-author">- Shawn T., Sandton</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8">
+                                    <div class="testimonial-card">
+                                        <div class="testimonial-content">
+                                            "I once had an Emergency plumbing repair on a Sunday and they quickly
+                                            responsed. Excellent service!!."
+                                        </div>
+                                        <div class="testimonial-author">- Thabo S., Centurion</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
                 </div>
 
-                <div class="carousel-item">
-                    <div class="row justify-content-center">
-                        <div class="col-md-8">
-                            <div class="testimonial-card">
-                                <div class="testimonial-content">
-                                    "I once had an Emergency plumbing repair on a Sunday and they quickly responsed. Excellent service!!."
-                                </div>
-                                <div class="testimonial-author">- Thabo S., Centurion</div>
-                            </div>
-                        </div>
-                    </div>
+                <!-- Google Review CTA -->
+                <div class="text-center mt-5">
+                    <p class="fw-bold mb-2">Had a good experience with us?</p>
+                    <a href="https://www.google.com/search?sxsrf=ANbL-n46JcTL7HTrRkR2lv43WFfgVf6RNQ:1768139348672&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qORHPqN4oxzAB8xyPBW4ylkooXGbsfylk0xesL0hNQtZtTXznX8zJ-mZgEoLKSEDhHxKanmpWd-Ntnav1LlC9Tvb88pB8iEHAfSuPjQrnBytzkKqtlQ%3D%3D&q=PEE+FRIDGES-REPAIR+Reviews&aic=0"
+                        target="_blank" class="btn btn-success btn-lg">
+                        <i class="fab fa-google me-2"></i>Leave a Google Review
+                    </a>
                 </div>
 
             </div>
+        </section>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-        </div>
+        <!-- Areas We Cover -->
+        <section class="areas-section">
+            <div class="container">
+                <h2 class="section-title">Mobile Appliance Repairs Across Gauteng</h2>
 
-        <!-- Google Review CTA -->
-        <div class="text-center mt-5">
-            <p class="fw-bold mb-2">Had a good experience with us?</p>
-            <a 
-                href="https://www.google.com/search?sxsrf=ANbL-n46JcTL7HTrRkR2lv43WFfgVf6RNQ:1768139348672&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qORHPqN4oxzAB8xyPBW4ylkooXGbsfylk0xesL0hNQtZtTXznX8zJ-mZgEoLKSEDhHxKanmpWd-Ntnav1LlC9Tvb88pB8iEHAfSuPjQrnBytzkKqtlQ%3D%3D&q=PEE+FRIDGES-REPAIR+Reviews&aic=0"
-                target="_blank"
-                class="btn btn-success btn-lg"
-            >
-                <i class="fab fa-google me-2"></i>Leave a Google Review
-            </a>
-        </div>
+                <p class="text-center mb-4">
+                    Our mobile repair team provides reliable, on-site appliance repair services
+                    across Gauteng, ensuring convenient and professional service wherever you are.
+                </p>
 
-    </div>
-</section>
+                <div class="text-center">
+                    <span class="area-badge">Johannesburg</span>
+                    <span class="area-badge">Pretoria</span>
+                    <span class="area-badge">Centurion</span>
+                    <span class="area-badge">Midrand</span>
+                    <span class="area-badge">Sandton</span>
+                    <span class="area-badge">Randburg</span>
+                    <span class="area-badge">Roodepoort</span>
+                    <span class="area-badge">Fourways</span>
+                    <span class="area-badge">Kempton Park</span>
+                    <span class="area-badge">Benoni</span>
+                    <span class="area-badge">Germiston</span>
+                    <span class="area-badge">Alberton</span>
+                </div>
 
-<!-- Areas We Cover -->
-<section class="areas-section">
-    <div class="container">
-        <h2 class="section-title">Mobile Appliance Repairs Across Gauteng</h2>
-
-        <p class="text-center mb-4">
-            Our mobile repair team provides reliable, on-site appliance repair services
-            across Gauteng, ensuring convenient and professional service wherever you are.
-        </p>
-
-        <div class="text-center">
-            <span class="area-badge">Johannesburg</span>
-            <span class="area-badge">Pretoria</span>
-            <span class="area-badge">Centurion</span>
-            <span class="area-badge">Midrand</span>
-            <span class="area-badge">Sandton</span>
-            <span class="area-badge">Randburg</span>
-            <span class="area-badge">Roodepoort</span>
-            <span class="area-badge">Fourways</span>
-            <span class="area-badge">Kempton Park</span>
-            <span class="area-badge">Benoni</span>
-            <span class="area-badge">Germiston</span>
-            <span class="area-badge">Alberton</span>
-        </div>
-
-        <p class="text-center mt-4">
-            Not listed above? Get in touch — our mobile technicians likely service your area.
-        </p>
-    </div>
-</section>
+                <p class="text-center mt-4">
+                    Not listed above? Get in touch — our mobile technicians likely service your area.
+                </p>
+            </div>
+        </section>
 
 
-<!-- CTA Section -->
-<section class="cta-section">
-    <div class="container">
-        <h2>Need Emergency Repairs? Don't Wait!</h2>
-        <p class="mb-4">Contact us now for fast, professional service across Gauteng</p>
-        <div>
-            <a href="https://wa.me/27731556489?text=Hi,%20I%20need%20emergency%20repair%20assistance"
-                class="btn btn-light me-3" target="_blank">
-                <i class="fab fa-whatsapp me-2"></i>WhatsApp
-            </a>
-            <a href="tel:0731556489" class="btn btn-outline-light">
-                <i class="fas fa-phone-alt me-2"></i>Call Now
-            </a>
-        </div>
-    </div>
-</section>
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Need Emergency Repairs? Don't Wait!</h2>
+                <p class="mb-4">Contact us now for fast, professional service across Gauteng</p>
+                <div>
+                    <a href="https://wa.me/27731556489?text=Hi,%20I%20need%20emergency%20repair%20assistance" onclick="gtag('event', 'whatsapp_click', {
+       'event_category': 'engagement',
+       'event_label': 'WhatsApp CTA Button'
+   });" class="btn btn-light me-3" target="_blank">
+                        <i class="fab fa-whatsapp me-2"></i>WhatsApp
+                    </a>
+                    <a href="tel:0731556489" onclick="gtag('event', 'call_click', {
+       'event_category': 'engagement',
+       'event_label': 'Call Button'
+   });" class="btn btn-outline-light">
+                        <i class="fas fa-phone-alt me-2"></i>Call Now
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -388,7 +419,7 @@
                         </li>
                         <li>
                             <i class="fas fa-envelope"></i>
-                            <span>fridgesrepair2012@gmail.com</span>
+                           <span>info@peefridgesrepairs.co.za</span>
                         </li>
                         <li>
                             <i class="fas fa-map-marker-alt"></i>

@@ -1,30 +1,13 @@
 // js/script.js
 
-// Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
-    
-    // Initialize navbar scroll effect
     initNavbarScroll();
-    
-    // Initialize smooth scrolling for anchor links
     initSmoothScroll();
-    
-    // Initialize all popovers
     initPopovers();
-    
-    // Initialize contact form handling
     initContactForm();
-    
-    // Initialize service cards animation
     initServiceCards();
-    
-    // Initialize WhatsApp button tracking
     initWhatsAppTracking();
-    
-    // Initialize call tracking
     initCallTracking();
-    
-    // Initialize testimonials slider
     initTestimonialsSlider();
 });
 
@@ -116,7 +99,6 @@ function initContactForm() {
 
 // Show alert message
 function showAlert(message, type) {
-    // Create alert element
     const alertDiv = document.createElement('div');
     alertDiv.className = `alert alert-${type} alert-dismissible fade show`;
     alertDiv.role = 'alert';
@@ -124,13 +106,11 @@ function showAlert(message, type) {
         ${message}
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     `;
-    
-    // Add to page
+
     const container = document.querySelector('.container') || document.querySelector('main');
     if (container) {
         container.insertBefore(alertDiv, container.firstChild);
         
-        // Auto remove after 5 seconds
         setTimeout(function() {
             const alert = bootstrap.Alert.getOrCreateInstance(alertDiv);
             alert.close();
@@ -143,11 +123,9 @@ function initServiceCards() {
     const serviceCards = document.querySelectorAll('.service-card');
     
     if (serviceCards.length > 0) {
-        // Create intersection observer
         const observer = new IntersectionObserver(function(entries) {
             entries.forEach(function(entry, index) {
                 if (entry.isIntersecting) {
-                    // Add delay for staggered animation
                     setTimeout(function() {
                         entry.target.style.opacity = '1';
                         entry.target.style.transform = 'translateY(0)';
@@ -158,7 +136,7 @@ function initServiceCards() {
             threshold: 0.1
         });
         
-        // Set initial state and observe each card
+
         serviceCards.forEach(function(card, index) {
             card.style.opacity = '0';
             card.style.transform = 'translateY(20px)';
@@ -172,17 +150,12 @@ function initServiceCards() {
 function initWhatsAppTracking() {
     document.querySelectorAll('a[href*="whatsapp"]').forEach(link => {
         link.addEventListener('click', function(e) {
-            // Get service context if available
             const serviceName = this.closest('.service-card') ? 
                 this.closest('.service-card').querySelector('h4').textContent : 
                 'General Inquiry';
             
-            // Log to console (in real app, send to analytics)
             console.log(`WhatsApp initiated for: ${serviceName} from ${window.location.pathname}`);
-            
-            // Add slight delay for tracking
             setTimeout(() => {
-                // Allow the link to proceed normally
                 return true;
             }, 100);
         });
@@ -193,12 +166,9 @@ function initWhatsAppTracking() {
 function initCallTracking() {
     document.querySelectorAll('a[href^="tel:"]').forEach(link => {
         link.addEventListener('click', function(e) {
-            // Log to console (in real app, send to analytics)
             console.log(`Call initiated to: ${this.href} from ${window.location.pathname}`);
-            
-            // Add slight delay for tracking
+
             setTimeout(() => {
-                // Allow the link to proceed normally
                 return true;
             }, 100);
         });
@@ -209,13 +179,10 @@ function initCallTracking() {
 function initTestimonialsSlider() {
     const testimonialCarousel = document.getElementById('testimonialCarousel');
     if (testimonialCarousel) {
-        // Initialize Bootstrap carousel
         const carousel = new bootstrap.Carousel(testimonialCarousel, {
             interval: 5000,
             wrap: true
         });
-        
-        // Pause on hover
         testimonialCarousel.addEventListener('mouseenter', function() {
             carousel.pause();
         });

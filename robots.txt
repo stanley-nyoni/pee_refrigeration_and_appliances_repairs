@@ -1,0 +1,14 @@
+User-agent: *
+# Allow search engines to crawl main pages
+Allow: /
+
+# Block folders that don’t need indexing
+Disallow: /assets/css/
+Disallow: /assets/js/
+Disallow: /assets/images/
+Disallow: /node_modules/
+Disallow: /temp/
+Disallow: /backup/
+
+# Sitemap location
+Sitemap: https://peefridgesrepairs.co.za/sitemap.xml

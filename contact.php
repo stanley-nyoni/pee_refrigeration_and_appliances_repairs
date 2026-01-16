@@ -1,3 +1,40 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+
+    $to = "mqelisinyoni77@gmail.com"; // TEMP test email
+    $subject = "New contact form submission";
+
+    // Safe POST handling
+    $name    = $_POST['name'] ?? 'N/A';
+    $phone   = $_POST['phone'] ?? 'N/A';
+    $email   = $_POST['email'] ?? 'N/A';
+    $service = $_POST['service'] ?? 'N/A';
+    $area    = $_POST['area'] ?? 'N/A';
+    $message = $_POST['message'] ?? 'N/A';
+
+    $body = "Name: $name\n";
+    $body .= "Phone: $phone\n";
+    $body .= "Email: $email\n";
+    $body .= "Service: $service\n";
+    $body .= "Area: $area\n\n";
+    $body .= "Message:\n$message";
+
+    // IMPORTANT: fixed From address
+    $headers  = "From: Pee Fridges Website <noreply@peefridgesrepairs.co.za>\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "Content-Type: text/plain; charset=UTF-8";
+
+    if (mail($to, $subject, $body, $headers)) {
+        echo "<script>alert('Thank you! Your message has been sent.');</script>";
+    } else {
+        echo "<script>alert('Mail failed. Please use WhatsApp or Call us.');</script>";
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,18 +56,17 @@
     <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="/images/favicon/site.webmanifest" />
-    <link rel="canonical" href="https://peefridgesrepairs.co.za/contact.html" />
 
-        <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BSBM42JXWC"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-BSBM42JXWC');
     </script>
-    <style>
+
+   <style>
         /* HERO */
      .about-hero {
             position: relative;
@@ -147,12 +183,8 @@
 
     <!-- Floating WhatsApp Button -->
     <a href="https://wa.me/27731556489?text=Hi,%20I%20need%20help%20with%20an%20appliance%20repair"
-        
-    onclick="gtag('event', 'whatsapp_click', {
-       'event_category': 'engagement',
-       'event_label': 'WhatsApp Floating Button'
-    });"
-    class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+       onclick="gtag('event', 'whatsapp_click', {event_category: 'engagement', event_label: 'WhatsApp Floating Button'});"
+       class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
@@ -165,18 +197,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="contact.html">Contact</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.php">Contact</a></li>
                     <li class="nav-item">
                         <a class="nav-link nav-cta" href="tel:0731556489">
                             <i class="fas fa-phone-alt me-2"></i>Call Now
@@ -193,7 +217,7 @@
         <div class="container text-center text-white">
             <h1 class="fw-bold">Contact Us</h1>
             <p class="lead">Get in touch for fast, reliable appliance repair service. Same-day appointments available.</p>
-             <a href="contact.html" class="btn btn-primary btn-lg mt-3">Get in Touch</a>
+            <a href="contact.php" class="btn btn-primary btn-lg mt-3">Get in Touch</a>
         </div>
     </section>
 
@@ -208,53 +232,51 @@
                         <div class="card-body p-4">
                             <h3 class="mb-4">Send Us a Message</h3>
 
-                            <form action="https://api.web3forms.com/submit" method="POST">
+                            <form method="POST"
+                                onsubmit="gtag('event', 'form_submit', {event_category: 'engagement', event_label: 'Contact Form'});">
                                 <div class="row">
-                                    <input type="hidden" name="access_key" value="d6e80823-ff26-466b-a8cd-5ef06789a8a9">
                                     <div class="col-md-6 mb-3">
                                         <label class="form-label">Full Name *</label>
-                                        <input type="text" name="full_name" class="form-control" required>
+                                        <input type="text" class="form-control" name="name" required>
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <label class="form-label">Phone Number *</label>
-                                        <input type="tel" name="number" class="form-control" required>
+                                        <input type="tel" class="form-control" name="phone" required>
                                     </div>
                                 </div>
 
                                 <div class="mb-3">
                                     <label class="form-label">Email Address</label>
-                                    <input type="email" name="email" class="form-control">
+                                    <input type="email" class="form-control" name="email">
                                 </div>
 
-                           <div class="mb-3">
-                            <label class="form-label">Service Needed</label>
-                            <select class="form-select" name="service_needed">
-                                <option selected>Select a service</option>
-                                <option>Fridge Repairs</option>
-                                <option>Freezer Repairs</option>
-                                <option>Cold & Freezer Rooms</option>
-                                <option>Chillers</option>
-                                <option>Air Conditioning</option>
-                                <option>Washing Machines</option>
-                                <option>Stoves & Ovens</option>
-                                <option>Electrical Repairs</option>
-                                <option>Plumbing Services</option>
-                                <option>Other</option>
-                            </select>
-                        </div>
-
+                                <div class="mb-3">
+                                    <label class="form-label">Service Needed</label>
+                                    <select class="form-select" name="service">
+                                        <option selected>Select a service</option>
+                                        <option>Fridge Repairs</option>
+                                        <option>Freezer Repairs</option>
+                                        <option>Cold & Freezer Rooms</option>
+                                        <option>Chillers</option>
+                                        <option>Air Conditioning</option>
+                                        <option>Washing Machines</option>
+                                        <option>Stoves & Ovens</option>
+                                        <option>Electrical Repairs</option>
+                                        <option>Plumbing Services</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
 
                                 <div class="mb-3">
                                     <label class="form-label">Your Area</label>
-                                    <input type="text" name="area" class="form-control"
+                                    <input type="text" class="form-control" name="area"
                                         placeholder="Johannesburg, Pretoria, Centurion">
                                 </div>
 
                                 <div class="mb-4">
                                     <label class="form-label">Message *</label>
-                                    <textarea class="form-control" name="message" rows="5" required></textarea>
+                                    <textarea class="form-control" rows="5" name="message" required></textarea>
                                 </div>
-                                <input type="hidden" name="redirect" value="https://web3forms.com/success">
 
                                 <button class="btn btn-danger btn-lg w-100">
                                     <i class="fas fa-paper-plane me-2"></i> Send Message
@@ -287,8 +309,8 @@
                         <div class="info-box">
                             <i class="fas fa-envelope"></i>
                             <h5>Email</h5>
-                            <a href="mailto:info@peefridgesrepairs.co.za">
-                                info@peefridgesrepairs.co.za
+                            <a href="mailto:fridgesrepair2012@gmail.com">
+                                fridgesrepair2012@gmail.com
                             </a>
                         </div>
 
@@ -326,8 +348,7 @@
         </iframe>
     </section>
 
-
-    <!-- FAQ Section -->
+        <!-- FAQ Section -->
     <div class="row mt-5">
         <div class="col-12">
             <h2 class="mb-4">Frequently Asked Questions</h2>
@@ -442,7 +463,7 @@
         </div>
     </div>
 
-    <!-- Footer -->
+        <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
             <div class="row gy-4">
@@ -473,7 +494,7 @@
                         </li>
                         <li>
                             <i class="fas fa-envelope"></i>
-                           <span>info@peefridgesrepairs.co.za</span>
+                            <span>fridgesrepair2012@gmail.com</span>
                         </li>
                         <li>
                             <i class="fas fa-map-marker-alt"></i>
@@ -489,7 +510,7 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Our Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.php">Contact</a></li>
                     </ul>
                 </div>
 
@@ -541,11 +562,7 @@
             </div>
         </div>
     </footer>
-
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Custom JS -->
     <script src="js/script.js"></script>
 </body>
 
