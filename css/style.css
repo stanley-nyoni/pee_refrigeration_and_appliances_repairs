@@ -302,20 +302,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.2rem;
 }
 
-
-/* .service-icon {
-    width: 70px;
-    height: 70px;
-    background-color: var(--primary-yellow);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 20px;
-    font-size: 1.8rem;
-    color: var(--dark-gray);
-} */
-
 /* Why Choose Us */
 .why-choose-us {
     background: linear-gradient(135deg, #e9d6a8, #e0d8c1);
@@ -364,7 +350,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Areas Covered */
 .areas-section {
-    background-color: var(--light-gray);
+    background-color: var(--white);
     padding: 60px 0;
 }
 
@@ -732,35 +718,6 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary-red);
 }
 
-/* Loading Animation */
-/* .loading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    z-index: 9999;
-    transition: opacity 0.5s, visibility 0.5s;
-}
-
-.loading.hidden {
-    opacity: 0;
-    visibility: hidden;
-} */
-
-/* .spinner {
-    width: 60px;
-    height: 60px;
-    border: 5px solid var(--light-gray);
-    border-top-color: var(--primary-red);
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-} */
-
 @keyframes spin {
     100% {
         transform: rotate(360deg);
@@ -840,18 +797,7 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 1.5rem;
     }
 
-    /* .navbar-toggler {
-        padding: 0.25rem 0.4rem;
-        font-size: 0.85rem;
-    }
-
-    .navbar-toggler-icon {
-        width: 1.1rem;
-        height: 1.1rem;
-        background-size: 1.1rem 1.1rem;
-    } */
-
-        .feature-box {
+    .feature-box {
         padding: 25px 20px;
     }
 
@@ -876,4 +822,74 @@ h1, h2, h3, h4, h5, h6 {
     .navbar-brand{
         font-size: .8rem;
     }
+}
+
+.contact-section {
+    background: linear-gradient(135deg, #e9d6a8, #e0d8c1);
+    padding: 80px 0;
+    color: var(--white);
+}
+
+.contact-section h2 {
+    font-weight: 700;
+}
+
+.contact-section p.section-subtitle {
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+    color: black;
+}
+
+.contact-card {
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.contact-card h3 {
+    color: var(--dark-gray);
+    font-weight: 600;
+}
+
+.contact-card .form-label {
+    font-weight: 500;
+    color: var(--dark-gray);
+}
+
+.contact-card .form-control,
+.contact-card .form-select {
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    transition: 0.3s ease;
+}
+
+.contact-card .form-control:focus,
+.contact-card .form-select:focus {
+    border-color: var(--primary-red);
+    box-shadow: 0 0 0 0.2rem rgba(230, 57, 70, 0.15);
+}
+
+.contact-btn {
+    background: var(--primary-red);
+    border: none;
+    padding: 14px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.contact-btn:hover {
+    background: #c92f3c;
+}
+
+.contact-highlight {
+    background: var(--primary-red);
+    color: var(--white);
+    padding: 6px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 15px;
 }
